@@ -1,0 +1,8 @@
+.Rproj.user/
+*Rproj
+.Rhistory
+resume_files/
+.secrets
+.DS_Store
+README.html
+css/cv_test.css

@@ -1,0 +1,436 @@
+---
+title: "Maxime Dahirel's CV"
+author: Maxime Dahirel
+date: "`r format(Sys.time(), '%m-%Y')`"
+knit: pagedown::chrome_print
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    css: ['css/custom_1.css','css/custom_2_styles.css','resume']
+    self_contained: true
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+library(glue)
+library(tidyverse)
+library(here)
+library(icon)
+
+# ======================================================================
+# These variables determine how the the data is loaded and how the exports are
+# done.
+
+# Is data stored in google sheets? If no data will be gather from the csvs/
+# folder in project
+using_googlesheets <- TRUE
+
+# Just the copied URL from the sheet
+positions_sheet_loc <- "https://docs.google.com/spreadsheets/d/1jp1yqvxYUha9-qZaZo9paw5xSWYupKOTFZghIU39RsY"
+
+# Is this sheet available for anyone to read? If you're using a private sheet
+# set this to false and go to gather_data.R and run the data loading manually
+# once to cache authentication
+sheet_is_publicly_readable <- TRUE
+
+# Is the goal of this knit to build a document that is exported to PDF? If so
+# set this to true to have links turned into footnotes at the end of the
+# document
+PDF_EXPORT <- TRUE
+
+
+#CV_PDF_LOC <- "https://github.com/mdahirel/cv/raw/master/strayer_cv.pdf"
+#CV_HTML_LOC <- "nickstrayer.me/cv/"
+
+
+# ======================================================================
+# Now we source two external scripts. One contains functions for building the
+# text output and the other loads up our data from either googlesheets or csvs
+
+# Functions for building sections from CSV data
+source('./R/parsing_functions.R') 
+
+# Load data for CV/Resume
+source('./R/gather_data.R')
+```
+
+
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("
+  <style>
+  :root{
+    --decorator-outer-offset-left: -6.5px;
+  }
+  </style>")
+}
+```
+
+```{css}
+a {
+  color: #238b45
+}
+```
+
+Aside
+================================================================================
+
+Info {#info}
+--------------------------------------------------------------------------------
+
+`r icon::fa("envelope", size = "lg")` maxime.dahirel@yahoo.fr  
+`r icon::fa("envelope", size = "lg")` maxime.dahirel@inrae.fr  
+`r icon::fa("twitter", size = "lg")` [\@mdahirel](https://twitter.com/mdahirel)  
+`r icon::fa("github", size = "lg")` [\@mdahirel](https://github.com/mdahirel)  
+`r icon::fa("home", size = "lg")` [mdahirel.github.io/](https://mdahirel.github.io/)  
+`r icon::ai("orcid", size = "lg")`	[0000-0001-8077-7765](https://orcid.org/0000-0001-8077-7765)  
+
+Key skills {#skills}
+--------------------------------------------------------------------------------
+
+### Main study taxa
+
+![snail](images/cornu-aspersum_gareth-monger-phylopic.png){width=25%}  ![orbweaver](images/araneus-diadematus_birgit-lang-phylopic.png){width=25%}
+
+**Rearing**  
+**Trait measurements**  
+**Behavioural observations** (direct and video tracking)   
+**Field sampling**  
+**Species ID** (Western Europe)  
+
+<br>
+
+### `r icon::fa("comment", size = "lg")` Languages
+
+```{r}
+build_skill_bars(language_skills)
+```  
+  
+<br>  
+  
+### `r icon::fa("chart-bar", size = "lg")` Data analysis  
+
+```{r}
+build_skill_bars(coding)
+```
+
+*Bayesian & frequentist statistics*  
+**Linear models and extensions** 
+(Any and all combinations of generalized, mixed, non-linear, or multivariate)    
+**Multivariate ordination and classification**  
+...  
+
+<br>  
+
+### `r icon::fa("laptop", size = "lg")` Other software
+```{r}
+build_skill_bars(software)
+```
+
+
+Main
+================================================================================
+
+Maxime Dahirel {#title}
+--------------------------------------------------------------------------------
+
+### **Behavioural and evolutionary ecologist**
+
+### Dispersal ecology and evolution, urban ecology
+
+I am interested in the causes and consequences of individual-level variation in behaviour, morphology and life-history, how it varies across space and time and how it is shaped by the interplay of environmental conditions and evolutionary constraints.  
+
+My research is especially focused on **dispersal**, as a key trait bridging ecological and evolutionary dynamics, and on the role of behaviour in explaining species' ability (or inability) to persist in increasingly anthropogenic environments (**especially cities**).  
+
+I develop these research themes using a combination of experiments, monitoring in naturalistic contexts and individual-based models.  
+  
+  
+`r icon::fa("arrow-right", size = "lg")` **To go directly to the list of publications [click here](#publications)**
+  
+
+Current Position {data-icon=laptop-code}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'current-job')
+```
+
+Previous Research Positions {data-icon=hourglass-end}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'previous-positions')
+```
+
+<br>
+
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'teaching-positions')
+```
+
+<br>
+<br>
+
+### Courses taught or co-taught in these positions include:  
+&nbsp;  
+**Statistics** (lectures and practical)  
+Advanced R for data analysis (1st year of MSc) ~ 20h  
+Statistical tools, methodologies, and experimental design (2nd year of BSc to 1st year of MSc) ~ 230h  
+&nbsp;  
+**Ecology** (lab and field)   
+General ecology (1st year of BSc) ~ 80h  
+Community ecology (3rd year of BSc and 1st year of MSc) ~ 42h  
+Spatial ecology (movement ecology; 1st year of MSc) ~ 4h  
+Ecological bases of vegetal production (3rd year of BSc) ~ 12h  
+Initiation to GIS (2nd year of BSc) ~ 4h  
+&nbsp;  
+**Zoology**  (lab and field)  
+Introduction to the diversity of life (1st year of BSc) ~ 30h  
+Entomology (3rd year of BSc) ~ 40h  
+Physiology of nutrition, development, growth (3rd year of BSc); ~ 6h  
+
+N/A
+
+N/A
+
+<br>
+
+Mentoring experience {data-icon=exchange-alt}
+--------------------------------------------------------------------------------
+
+### Supervision of 11 MSc students and 4 BSc students (1 to 6 months projects)
+
+Field and lab studies of dispersal and behaviour  
+Data synthesis and individual-based modelling  
+
+N/A
+
+2020 - 2012
+
+:::aside
+More information on each project [here](https://mdahirel.github.io/mentoring)
+:::
+
+<br>
+
+Research funding acquired {data-icon=euro-sign}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(funding, 'research')
+```
+
+<br>
+
+Selected science communication (by and about) {data-icon=comment}
+--------------------------------------------------------------------------------
+
+:::aside 
+`r icon::fa("newspaper", size = "lg")` Research I have participated in has also been featured by various press outlets including the [RTBF](https://www.rtbf.be/info/societe/detail_les-animaux-changent-de-taille-quand-ils-vivent-en-ville?id=9925810), [De Standaard](https://www.standaard.be/cnt/dmf20180402_03441454?pid=7091648&fbclid=IwAR0CxwoUiWmwK0Mjt3s27lCd08ZkriviLRMPGkwW2lb0bgJETXMrXcjHCd8), [Scientific American](https://www.scientificamerican.com/podcast/episode/city-life-favors-downsized-invertebrates/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+sciam%2F60secsciencepodcast+%28Podcast%3A+Scientific+American+-+60-Second+Science%29), [Le Temps](https://www.letemps.ch/sciences/lurbanisation-un-probleme-taille), as well as local journals and television channels.
+:::
+
+### [Contributor to the Life in the City : Evolution in an Urbanizing World blog](https://lifeinthecityurbanevo.wordpress.com/)
+
+Discussions of current topics and articles in urban ecology and evolution
+
+N/A
+
+since 2018  
+
+
+### [Participation to the rotation curation science outreach account La Bio au Labo](https://twitter.com/laBioauLabo)
+
+Archives (in French) [here](https://wakelet.com/wake/94072ba5-c1b3-4d25-acd0-5e0a2b64ace3) 
+
+N/A
+
+2018  
+
+### La vie au pied de l’immeuble: adaptation et évolution biologique en ville (Life among buildings : adaptation and biological evolution in cities).
+
+Pint of Science
+
+Rennes, France
+
+2017
+
+with Balbi, M.  
+
+### [The Circles of Life: 52 stories of people and the things they really, really, really care about.](https://252mya.com/circles) 
+
+An illustration series by Franz Anthony.
+
+N/A
+
+2017
+
+<br>
+
+
+Service {data-icon=book, class=no-timeline}
+--------------------------------------------------------------------------------
+
+:::aside
+full Publons record [here](https://publons.com/author/1196421/maxime-dahirel)  
+:::
+
+### Referee for various journals and outlets 
+
+including Proceedings of the Royal Society B, Functional Ecology, Journal of Animal Ecology, Oikos, PCI Ecology, Ethology… 
+
+N/A
+
+N/A
+
+### Member of the Grant Review College of the British Ecological Society
+
+Reviewing Research and Outreach Grant applications (6 to 8 / year)
+
+N/A
+
+N/A
+
+### PhD students representative to the Advisory Board of the research unit
+
+University of Rennes 1, ECOBIO (Ecosystems, Biodiversity, Evolution)
+
+N/A
+
+2014 - 2012
+
+<br>
+<br>
+
+List of publications and communications {#publications data-icon=book}
+--------------------------------------------------------------------------------
+
+
+Preprints {data-icon=file}
+--------------------------------------------------------------------------------
+```{r}
+print_section(articles, 'preprint')
+```
+
+Peer-reviewed publications {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(articles, 'peer-reviewed')
+```
+
+<br>
+
+Talks in national and international conferences {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+:::aside 
+(Talks or posters as non-presenting author not included)
+:::
+
+```{r}
+print_section(talks_and_posters, 'talk')
+```
+
+<br>
+
+
+Posters {data-icon=table}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(talks_and_posters, 'poster')
+```
+
+<br>
+
+Workshops {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(talks_and_posters, 'workshop')
+```
+
+<br>
+
+Predoctoral Education {data-icon=user-graduate}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(education, 'diploma')
+```
+
+<br>
+
+Other {data-icon=book, class=no-timeline}
+--------------------------------------------------------------------------------
+
+### Qualifications from the French National Council of Universities
+
+authorized to apply for Lecturer/Assistant Professor positions in France, section 67 (Population Biology and Ecology) and 68 (Biology of Organisms)
+
+N/A
+
+N/A
+
+
+
+###	Member of the British Ecological Society
+
+N/A
+
+N/A  
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+References {data-icon=book, class=no-timeline}
+--------------------------------------------------------------------------------
+
+
+```{r}
+print_section(references, 'references')
+```
+
+
+```{r}
+#if(PDF_EXPORT){
+#  cat("
+#  
+#Links {data-icon=link}
+#--------------------------------------------------------------------------------
+#
+#<br>
+#
+#
+#")
+#  
+#  walk2(links, 1:length(links), function(link, index){
+#    print(glue('{index}. {link}'))
+#  })
+#}
+```
+
+Disclaimer {#disclaimer style="width: var(--sidebar-width); padding-left: var(--sidebar-horizontal-padding);"}
+--------------------------------------------------------------------------------
+
+Made in R with [pagedown](https://github.com/rstudio/pagedown)  
+Code on [GitHub](https://github.com/mdahirel/cv)  
+Animal silhouettes from [Phylopic](https://http://phylopic.org/):  
+snail by [Gareth Monger](http://phylopic.org/image/cdc067a4-c2cc-4962-b330-2c9d02d245cb/)  
+spider by [Birgit Lang](http://phylopic.org/image/c8ca5adb-0b7d-4966-a5ca-efcca71b1542/)  
+CV last updated on `r Sys.Date()`.

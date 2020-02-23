@@ -1,2 +1,3 @@
-# cv
- My cv made in R using pagedown
+## My pagedown rendered CV
+
+Based on Nick Strayer's : https://github.com/nstrayer/cv
