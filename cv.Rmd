@@ -146,11 +146,11 @@ Maxime Dahirel {#title}
 
 ### Dispersal ecology and evolution, urban ecology
 
-I am interested in the causes and consequences of individual-level variation in behaviour, morphology and life-history, how it varies across space and time and how it is shaped by the interplay of environmental conditions and evolutionary constraints.  
+My researches on the causes and consequences of **individual-level variation** are especially focused on **dispersal**, as a key trait bridging ecological and evolutionary dynamics, and on the role of behaviour in explaining species' ability (or inability) to persist in increasingly anthropogenic environments (**especially cities**).  
 
-My research is especially focused on **dispersal**, as a key trait bridging ecological and evolutionary dynamics, and on the role of behaviour in explaining species' ability (or inability) to persist in increasingly anthropogenic environments (**especially cities**).  
+I view these two axes of my researches as tightly linkled, given the role of dispersal in responses to environmental changes in space and time. As (dispersal) behaviours are one part of complex integrated phenotypes, I am also always interested in the dynamics of morphological and physiological traits, among others.
 
-I develop these research themes using a combination of experiments, monitoring in naturalistic contexts and individual-based models.  
+I develop these research themes using a combination of lab and outdoor experiments, monitoring in naturalistic contexts and individual-based models.  
   
   
 `r icon::fa("arrow-right", size = "lg")` **To go directly to the list of publications [click here](#publications)**
@@ -184,7 +184,7 @@ print_section(position_data, 'teaching-positions')
 
 ### Courses taught or co-taught in these positions include:  
 &nbsp;  
-**Statistics** (lectures and practical)  
+**Statistics and data science** (lectures and practical)  
 Advanced R for data analysis (1st year of MSc) ~ 20h  
 Statistical tools, methodologies, and experimental design (2nd year of BSc to 1st year of MSc) ~ 230h  
 &nbsp;  
@@ -209,7 +209,7 @@ N/A
 Mentoring experience {data-icon=exchange-alt}
 --------------------------------------------------------------------------------
 
-### Supervision of 11 MSc students and 4 BSc students (1 to 6 months projects)
+### Supervision of 12 MSc students and 4 BSc students (1 to 6 months projects)
 
 Field and lab studies of dispersal and behaviour  
 Data synthesis and individual-based modelling  
@@ -249,7 +249,7 @@ N/A
 since 2018  
 
 
-### [Participation to the rotation curation science outreach account La Bio au Labo](https://twitter.com/laBioauLabo)
+### [Participation to the rotation curation outreach account La Bio au Labo](https://twitter.com/laBioauLabo)
 
 Archives (in French) [here](https://wakelet.com/wake/94072ba5-c1b3-4d25-acd0-5e0a2b64ace3) 
 
@@ -259,7 +259,7 @@ N/A
 
 ### La vie au pied de l’immeuble: adaptation et évolution biologique en ville (Life among buildings : adaptation and biological evolution in cities).
 
-Pint of Science
+Public talk and discussion, Pint of Science
 
 Rennes, France
 
@@ -316,13 +316,13 @@ List of publications and communications {#publications data-icon=book}
 --------------------------------------------------------------------------------
 
 
-Preprints {data-icon=file}
+Preprints (`r dim(filter(articles, section=="preprint"))[1]`) {data-icon=file}
 --------------------------------------------------------------------------------
 ```{r}
 print_section(articles, 'preprint')
 ```
 
-Peer-reviewed publications {data-icon=book}
+Peer-reviewed publications (`r dim(filter(articles, section=="peer-reviewed"))[1]`) {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -331,7 +331,7 @@ print_section(articles, 'peer-reviewed')
 
 <br>
 
-Talks in national and international conferences {data-icon=chalkboard-teacher}
+Talks in conferences (`r dim(filter(talks_and_posters, section=="talk"))[1]`) {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 :::aside 
@@ -344,8 +344,7 @@ print_section(talks_and_posters, 'talk')
 
 <br>
 
-
-Posters {data-icon=table}
+Posters (`r dim(filter(talks_and_posters, section=="poster"))[1]`) {data-icon=table .page-break-before}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -392,19 +391,17 @@ N/A
 N/A  
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-References {data-icon=book, class=no-timeline}
+
+
+References {data-icon=book, class=no-timeline .page-break-before}
 --------------------------------------------------------------------------------
 
 
 ```{r}
 print_section(references, 'references')
 ```
+
 
 
 ```{r}
