@@ -344,7 +344,7 @@ print_section(talks_and_posters, 'talk')
 
 <br>
 
-Posters (`r dim(filter(talks_and_posters, section=="poster"))[1]`) {data-icon=table .page-break-before}
+Posters (`r dim(filter(talks_and_posters, section=="poster"))[1]`) {data-icon=table}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -353,7 +353,7 @@ print_section(talks_and_posters, 'poster')
 
 <br>
 
-Workshops {data-icon=chalkboard-teacher}
+Workshops {data-icon=chalkboard-teacher  .page-break-before}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -391,10 +391,11 @@ N/A
 N/A  
 
 <br>
+<br>
+<br>
+<br>
 
-
-
-References {data-icon=book, class=no-timeline .page-break-before}
+References {data-icon=book, class=no-timeline}
 --------------------------------------------------------------------------------
 
 
