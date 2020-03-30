@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Lato+Black&display=swap");
 
-/* Main text is monserrat*/
+/* Main text is open sans*/
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -8,7 +8,7 @@ body {
   color: #444;
 }
 
-/* Give headers source sans font */
+/* Give headers lato black font */
 h1,
 h2,
 h3 {
