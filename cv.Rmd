@@ -353,9 +353,9 @@ print_section(talks_and_posters, 'poster')
 
 <br>
 
-Workshops {data-icon=chalkboard-teacher  .page-break-before}
+Workshops {data-icon=chalkboard-teacher} 
 --------------------------------------------------------------------------------
-
+<!--.page-break-before-->
 ```{r}
 print_section(talks_and_posters, 'workshop')
 ```
