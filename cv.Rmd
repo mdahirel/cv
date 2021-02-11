@@ -224,7 +224,7 @@ More information on each project [here](https://mdahirel.github.io/post/people/)
 
 <br>
 
-Research funding acquired {data-icon=euro-sign}
+Research funding {data-icon=euro-sign}
 --------------------------------------------------------------------------------
 
 ```{r}
