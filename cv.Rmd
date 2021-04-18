@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 library(glue)
 library(tidyverse)
 library(here)
-library(icon)
+library(icons)
 
 # ======================================================================
 # These variables determine how the the data is loaded and how the exports are
@@ -86,12 +86,12 @@ Aside
 Info {#info}
 --------------------------------------------------------------------------------
 
-`r icon::fa("envelope", size = "lg")` maxime.dahirel@yahoo.fr  
-`r icon::fa("envelope", size = "lg")` maxime.dahirel@inrae.fr  
-`r icon::fa("twitter", size = "lg")` [\@mdahirel](https://twitter.com/mdahirel)  
-`r icon::fa("github", size = "lg")` [\@mdahirel](https://github.com/mdahirel)  
-`r icon::fa("home", size = "lg")` [mdahirel.github.io/](https://mdahirel.github.io/)  
-`r icon::ai("orcid", size = "lg")`	[0000-0001-8077-7765](https://orcid.org/0000-0001-8077-7765)  
+ `r icons::fontawesome("envelope")` maxime.dahirel@inrae.fr  
+`r icons::fontawesome("envelope")` maxime.dahirel@yahoo.fr  
+`r icons::fontawesome("twitter")` [\@mdahirel](https://twitter.com/mdahirel)  
+`r icons::fontawesome("github")` [\@mdahirel](https://github.com/mdahirel)  
+`r icons::fontawesome("home")` [mdahirel.github.io/](https://mdahirel.github.io/)  
+`r icons::fontawesome("orcid")`	[0000-0001-8077-7765](https://orcid.org/0000-0001-8077-7765)  
 
 Key skills {#skills}
 --------------------------------------------------------------------------------
@@ -108,7 +108,7 @@ Key skills {#skills}
 
 <br>
 
-### `r icon::fa("comment", size = "lg")` Languages
+### `r icon_style(icons::fontawesome("comment"), scale=1.2)` Languages
 
 ```{r}
 build_skill_bars(language_skills)
@@ -116,7 +116,7 @@ build_skill_bars(language_skills)
   
 <br>  
   
-### `r icon::fa("chart-bar", size = "lg")` Data analysis  
+### `r icon_style(icons::fontawesome("chart-bar"), scale=1.2)` Data analysis  
 
 ```{r}
 build_skill_bars(coding)
@@ -130,7 +130,7 @@ build_skill_bars(coding)
 
 <br>  
 
-### `r icon::fa("laptop", size = "lg")` Other software
+### `r icon_style(icons::fontawesome("laptop"), scale=1.2)` Other software
 ```{r}
 build_skill_bars(software)
 ```
@@ -148,20 +148,21 @@ Maxime Dahirel {#title}
 
 My researches on the causes and consequences of **individual-level variation** are especially focused on **dispersal**, as a key trait bridging ecological and evolutionary dynamics, and on the role of behaviour in explaining species' ability (or inability) to persist in increasingly anthropogenic environments (**especially cities**).  
 
-I view these two axes of my researches as tightly linkled, given the role of dispersal in responses to environmental changes in space and time. As (dispersal) behaviours are one part of complex integrated phenotypes, I am also always interested in the dynamics of morphological and physiological traits, among others.
+I view these two axes of my researches as tightly linked, given the role of dispersal in responses to environmental changes in space and time. As (dispersal) behaviours are one part of complex integrated phenotypes, I am also always interested in the dynamics of morphological and physiological traits, among others.
 
 I develop these research themes using a combination of lab and outdoor experiments, monitoring in naturalistic contexts and individual-based models.  
   
-  
-`r icon::fa("arrow-right", size = "lg")` **To go directly to the list of publications [click here](#publications)**
+**To go directly to the list of publications [click here](#publications)**
   
 
-Current Position {data-icon=laptop-code}
+Upcoming Position {data-icon=laptop-code}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'current-job')
+print_section(position_data, 'upcoming-job')
 ```
+
+<br>
 
 Previous Research Positions {data-icon=hourglass-end}
 --------------------------------------------------------------------------------
@@ -171,6 +172,7 @@ print_section(position_data, 'previous-positions')
 ```
 
 <br>
+<br>
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
@@ -178,9 +180,6 @@ Teaching Experience {data-icon=chalkboard-teacher}
 ```{r}
 print_section(position_data, 'teaching-positions')
 ```
-
-<br>
-<br>
 
 ### Courses taught or co-taught in these positions include:  
 &nbsp;  
@@ -209,6 +208,15 @@ N/A
 Mentoring experience {data-icon=exchange-alt}
 --------------------------------------------------------------------------------
 
+### co-supervision of 1 PhD student
+
+Experimental evolution 
+Data synthesis and individual-based modelling  
+
+N/A
+
+present - 2020
+
 ### Supervision of 12 MSc students and 4 BSc students (1 to 6 months projects)
 
 Field and lab studies of dispersal and behaviour  
@@ -232,12 +240,13 @@ print_section(funding, 'research')
 ```
 
 <br>
+<br>
 
-Selected science communication (by and about) {data-icon=comment}
+Selected science communication {data-icon=comment}
 --------------------------------------------------------------------------------
 
 :::aside 
-`r icon::fa("newspaper", size = "lg")` Research I have participated in has also been featured by various press outlets including the [RTBF](https://www.rtbf.be/info/societe/detail_les-animaux-changent-de-taille-quand-ils-vivent-en-ville?id=9925810), [De Standaard](https://www.standaard.be/cnt/dmf20180402_03441454?pid=7091648&fbclid=IwAR0CxwoUiWmwK0Mjt3s27lCd08ZkriviLRMPGkwW2lb0bgJETXMrXcjHCd8), [Scientific American](https://www.scientificamerican.com/podcast/episode/city-life-favors-downsized-invertebrates/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+sciam%2F60secsciencepodcast+%28Podcast%3A+Scientific+American+-+60-Second+Science%29), [Le Temps](https://www.letemps.ch/sciences/lurbanisation-un-probleme-taille), as well as local journals and television channels.
+`r icon_style(icons::fontawesome("newspaper"), scale=2)` Research I have participated in has also been featured by various press outlets including the [RTBF](https://www.rtbf.be/info/societe/detail_les-animaux-changent-de-taille-quand-ils-vivent-en-ville?id=9925810), [De Standaard](https://www.standaard.be/cnt/dmf20180402_03441454?pid=7091648&fbclid=IwAR0CxwoUiWmwK0Mjt3s27lCd08ZkriviLRMPGkwW2lb0bgJETXMrXcjHCd8), [Scientific American](https://www.scientificamerican.com/podcast/episode/city-life-favors-downsized-invertebrates/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+sciam%2F60secsciencepodcast+%28Podcast%3A+Scientific+American+-+60-Second+Science%29), [Le Temps](https://www.letemps.ch/sciences/lurbanisation-un-probleme-taille), as well as local journals and television channels.
 :::
 
 ### [Contributor to the Life in the City : Evolution in an Urbanizing World blog](https://lifeinthecityurbanevo.wordpress.com/)
@@ -266,14 +275,6 @@ Rennes, France
 2017
 
 with Balbi, M.  
-
-### [The Circles of Life: 52 stories of people and the things they really, really, really care about.](https://252mya.com/circles) 
-
-An illustration series by Franz Anthony.
-
-N/A
-
-2017
 
 <br>
 
@@ -370,13 +371,15 @@ print_section(education, 'diploma')
 ```
 
 <br>
+<br>
+<br>
 
 Other {data-icon=book, class=no-timeline}
 --------------------------------------------------------------------------------
 
-### Qualifications from the French National Council of Universities
+### Qualification from the French National Council of Universities
 
-authorized to apply for Lecturer/Assistant Professor positions in France, section 67 (Population Biology and Ecology) and 68 (Biology of Organisms)
+authorized to apply for Lecturer/Assistant Professor positions in France, section 67 (Population Biology and Ecology)
 
 N/A
 
@@ -392,8 +395,7 @@ N/A
 
 <br>
 <br>
-<br>
-<br>
+
 
 References {data-icon=book, class=no-timeline}
 --------------------------------------------------------------------------------
