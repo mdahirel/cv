@@ -144,22 +144,23 @@ Maxime Dahirel {#title}
 
 ### **Behavioural and evolutionary ecologist**
 
-### Dispersal ecology and evolution, urban ecology
+### Urban ecology and evolution, dispersal ecology
 
-My researches on the causes and consequences of **individual-level variation** are especially focused on **dispersal**, as a key trait bridging ecological and evolutionary dynamics, and on the role of behaviour in explaining species' ability (or inability) to persist in increasingly anthropogenic environments (**especially cities**).  
+My researches on the causes and consequences of **individual-level variation** are split along two linked axes:
 
-I view these two axes of my researches as tightly linked, given the role of dispersal in responses to environmental changes in space and time. As (dispersal) behaviours are one part of complex integrated phenotypes, I am also always interested in the dynamics of morphological and physiological traits, among others.
+- the ecology of **dispersal**, as a key trait bridging ecological and evolutionary dynamics
+- the role of variation in explaining species' ability (or inability) to persist in increasingly anthropogenic environments (**especially cities**).  
 
 I develop these research themes using a combination of lab and outdoor experiments, monitoring in naturalistic contexts and individual-based models.  
   
 **To go directly to the list of publications [click here](#publications)**
   
 
-Upcoming Position {data-icon=laptop-code}
+Current Position {data-icon=laptop-code}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'upcoming-job')
+print_section(position_data, 'current-job')
 ```
 
 <br>
@@ -210,7 +211,7 @@ Mentoring experience {data-icon=exchange-alt}
 
 ### co-supervision of 1 PhD student
 
-Experimental evolution 
+Experimental evolution  
 Data synthesis and individual-based modelling  
 
 N/A
@@ -239,6 +240,11 @@ Research funding {data-icon=euro-sign}
 print_section(funding, 'research')
 ```
 
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
