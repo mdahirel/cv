@@ -148,8 +148,8 @@ Maxime Dahirel {#title}
 
 My researches on the causes and consequences of **individual-level variation** are split along two linked axes:
 
-- the ecology of **dispersal**, as a key trait bridging ecological and evolutionary dynamics
-- the role of variation in explaining species' ability (or inability) to persist in increasingly anthropogenic environments (**especially cities**).  
+- the role of variation in explaining species' ability (or inability) to persist in increasingly anthropogenic environments (**especially cities**)
+- the ecology of **dispersal**, as a key trait bridging ecological and evolutionary dynamics.  
 
 I develop these research themes using a combination of lab and outdoor experiments, monitoring in naturalistic contexts and individual-based models.  
   
@@ -172,6 +172,10 @@ Previous Research Positions {data-icon=hourglass-end}
 print_section(position_data, 'previous-positions')
 ```
 
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
@@ -218,14 +222,14 @@ N/A
 
 present - 2020
 
-### Supervision of 12 MSc students and 4 BSc students (1 to 6 months projects)
+### Supervision of 13 MSc students (1st or 2nd year) and 5 BSc students (1 to 6 months projects)
 
 Field and lab studies of dispersal and behaviour  
 Data synthesis and individual-based modelling  
 
 N/A
 
-2020 - 2012
+present - 2012
 
 :::aside
 More information on each project [here](https://mdahirel.github.io/post/people/)
@@ -240,12 +244,6 @@ Research funding {data-icon=euro-sign}
 print_section(funding, 'research')
 ```
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 
 Selected science communication {data-icon=comment}
@@ -287,10 +285,6 @@ with Balbi, M.
 
 Service {data-icon=book, class=no-timeline}
 --------------------------------------------------------------------------------
-
-:::aside
-full Publons record [here](https://publons.com/author/1196421/maxime-dahirel)  
-:::
 
 ### Referee for various journals and outlets 
 
