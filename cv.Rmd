@@ -85,8 +85,8 @@ Aside
 
 Info {#info}
 --------------------------------------------------------------------------------
-
- `r icons::fontawesome("envelope")` maxime.dahirel@inrae.fr  
+ 
+ `r icons::fontawesome("envelope")` maxime.dahirel@ugent.be  
 `r icons::fontawesome("envelope")` maxime.dahirel@yahoo.fr  
 `r icons::fontawesome("twitter")` [\@mdahirel](https://twitter.com/mdahirel)  
 `r icons::fontawesome("github")` [\@mdahirel](https://github.com/mdahirel)  
@@ -141,6 +141,8 @@ Main
 
 Maxime Dahirel {#title}
 --------------------------------------------------------------------------------
+
+### (he/him)
 
 ### **Behavioural and evolutionary ecologist**
 
