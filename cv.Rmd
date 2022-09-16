@@ -144,13 +144,13 @@ Maxime Dahirel {#title}
 
 ### (he/him)
 
-### **Behavioural and evolutionary ecologist**
+### **Evolutionary ecologist**
 
 ### Urban ecology and evolution, dispersal ecology
 
 My researches on the causes and consequences of **individual-level variation** are split along two linked axes:
 
-- the role of variation in explaining species' ability (or inability) to persist in increasingly anthropogenic environments (**especially cities**)
+- the role of trait variation in explaining species' ability (or inability) to persist in increasingly anthropogenic environments (**especially cities**)
 - the ecology of **dispersal**, as a key trait bridging ecological and evolutionary dynamics.  
 
 I develop these research themes using a combination of lab and outdoor experiments, monitoring in naturalistic contexts and individual-based models.  
