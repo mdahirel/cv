@@ -7,7 +7,12 @@
   --pagedjs-margin-bottom: 0.2in;
 }
 
-
+@media print {
+  /* paper size and orientation */
+  @page {
+    size: A4 portrait;
+  }
+}
 
 
 

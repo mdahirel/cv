@@ -175,11 +175,6 @@ print_section(position_data, 'previous-positions')
 ```
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
@@ -246,6 +241,13 @@ Research funding {data-icon=euro-sign}
 print_section(funding, 'research')
 ```
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 
 Selected science communication {data-icon=comment}
