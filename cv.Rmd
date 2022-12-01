@@ -257,6 +257,15 @@ Selected science communication {data-icon=comment}
 `r icon_style(icons::fontawesome("newspaper"), scale=2)` Research I have participated in has also been featured by various press outlets including the [RTBF](https://www.rtbf.be/info/societe/detail_les-animaux-changent-de-taille-quand-ils-vivent-en-ville?id=9925810), [De Standaard](https://www.standaard.be/cnt/dmf20180402_03441454?pid=7091648&fbclid=IwAR0CxwoUiWmwK0Mjt3s27lCd08ZkriviLRMPGkwW2lb0bgJETXMrXcjHCd8), [Scientific American](https://www.scientificamerican.com/podcast/episode/city-life-favors-downsized-invertebrates/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+sciam%2F60secsciencepodcast+%28Podcast%3A+Scientific+American+-+60-Second+Science%29), [Le Temps](https://www.letemps.ch/sciences/lurbanisation-un-probleme-taille), as well as local journals and television channels.
 :::
 
+### [Invited speaker, Ateliers À propos](https://www.a-propos.brussels/)
+
+Online science workshop (targeted to 6-12 year olds): invited for a session on snail biology, urban ecology (in French)
+
+N/A
+
+2022 
+
+
 ### [Contributor to the Life in the City : Evolution in an Urbanizing World blog](https://lifeinthecityurbanevo.wordpress.com/)
 
 Discussions of current topics and articles in urban ecology and evolution
