@@ -142,7 +142,7 @@ Main
 Maxime Dahirel {#title}
 --------------------------------------------------------------------------------
 
-### (he/him)
+### (he/they)
 
 ### **Evolutionary ecologist**
 
@@ -158,7 +158,7 @@ I develop these research themes using a combination of lab and outdoor experimen
 **To go directly to the list of publications [click here](#publications)**
   
 
-Current Position {data-icon=laptop-code}
+Most Recent Position {data-icon=laptop-code}
 --------------------------------------------------------------------------------
 
 ```{r}
