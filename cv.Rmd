@@ -88,7 +88,7 @@ Info {#info}
  
  `r icons::fontawesome("envelope")` maxime.dahirel@ugent.be  
 `r icons::fontawesome("envelope")` maxime.dahirel@yahoo.fr  
-`r icons::fontawesome("twitter")` [\@mdahirel](https://twitter.com/mdahirel)  
+`r icons::fontawesome("mastodon")` [\@mdahirel\@mastodon.social](https://mastodon.social/@mdahirel)  
 `r icons::fontawesome("github")` [\@mdahirel](https://github.com/mdahirel)  
 `r icons::fontawesome("home")` [mdahirel.github.io/](https://mdahirel.github.io/)  
 `r icons::fontawesome("orcid")`	[0000-0001-8077-7765](https://orcid.org/0000-0001-8077-7765)  
