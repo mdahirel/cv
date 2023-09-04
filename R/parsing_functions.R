@@ -20,7 +20,7 @@ print_position <- function(position_data, section_id){
       "\n\n",
       "|      [institution]",
       "\n\n",
-      "|      - [description_1]",
+      "|      [description_1]",
       "\n\n\n",
       .na="",
       .open="[",.close="]"  # change from default to avoid issues with fa icons
