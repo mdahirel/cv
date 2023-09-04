@@ -1,0 +1,303 @@
+---
+title: Maxime Dahirel
+subtitle: (he/they)
+format: 
+    pdf:
+      keep-tex: false
+      include-in-header: 
+       - "cv-header.tex"
+      toc: false
+      toc-depth:  2
+      code-block-bg: light
+      linkcolor: links
+      urlcolor: links
+      fontsize: 10pt
+      geometry:
+        - a4paper
+        - left=20mm
+        - top=20mm
+        - bottom=20mm
+        - right=65mm
+        - marginparwidth=50mm
+        - marginparsep=8mm
+---
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+library(glue)
+library(ggtext)
+library(commonmark)
+library(here)
+source('./R/parsing_functions.R')
+source('./R/get_data.R')
+```
+
+::: {.column-margin}
+
+`\vspace{-12em}`{=latex}
+
+## Info {#info}
+
+{{< fa envelope >}} maxime.dahirel\@ugent.be\
+{{< fa envelope >}} maxime.dahirel\@yahoo.fr\
+{{< fa mastodon >}} [\@mdahirel\@mastodon.social](https://mastodon.social/@mdahirel)\
+{{< fa brands github >}} [\@mdahirel](https://github.com/mdahirel)\
+{{< fa home >}} [mdahirel.github.io/](https://mdahirel.github.io/)\
+{{< fa orcid >}} [0000-0001-8077-7765](https://orcid.org/0000-0001-8077-7765)
+
+## Key skills {#skills}
+
+### Main study taxa {#taxa}
+
+![snail](images/cornu-aspersum_gareth-monger-phylopic.png){width=10%}  ![orbweaver](images/araneus-diadematus_birgit-lang-phylopic.png){width=10%}
+
+**Rearing**  
+**Trait measurements**  
+**Behavioural test observations**   
+**Field sampling**  
+**Species ID** (Western Europe)  
+
+### {{< fa comment >}} Languages {#languages}
+
+```{r}
+#| echo: false
+#| fig-height: 2.4
+language_skills |> 
+  mutate(skill=fct_reorder(skill,level)) |> 
+  build_skill_bars()
+```
+
+### {{< fa code >}} Programming languages {#coding}
+
+```{r}
+#| echo: false
+#| fig-height: 1.6
+coding |> 
+  mutate(skill=fct_reorder(skill,level)) |> 
+  build_skill_bars()
+```
+### {{< fa chart-line >}} Data science and statistics {#stats}
+
+**Version control with Git & GitHub**  
+**Quarto/RMarkdown**  
+**Bayesian & frequentist statistics**  
+Linear models and extensions
+(Any and all combinations of generalized, mixed, non-linear, or multivariate)  
+Ordination and classification methods  
+...  
+**Spatial data science & GIS**  
+
+### {{< fa laptop >}} Other software {#software}
+
+```{r}
+#| echo: false
+#| fig-height: 2.4
+software |> 
+  mutate(skill=fct_reorder(skill,level)) |> 
+  build_skill_bars()
+```
+:::
+
+My researches are mostly split along two linked axes: 
+
+- **urban biodiversity, ecology and evolution**, with a focus on the role of trait variation in explaining species' ability (or inability) to persist in cities  
+
+- **dispersal** as a key trait bridging ecological and evolutionary dynamics.
+
+I develop these research themes using a combination of lab and outdoor experiments, monitoring in naturalistic contexts and individual-based models.
+
+**To go directly to the list of publications [click here](#publications)**
+
+## Most recent position {#lastjob}
+
+```{r}
+#| echo: false
+#| output: asis
+print_position(position_data, 'current-job')
+```
+
+## Previous positions {#jobs}
+
+```{r}
+#| echo: false
+#| output: asis
+print_position(position_data, 'previous-positions')
+```
+
+## Teaching experience {#teaching}
+
+```{r}
+#| echo: false
+#| output: asis
+print_position(position_data, 'teaching-positions')
+```
+
+### Courses taught or co-taught in these positions include:  
+
+| **Statistics and data science** (lectures and practical)  
+|      Advanced R for data analysis (1st year of MSc) ~ 20h  
+|      Statistical tools and experimental design (2nd year of BSc to 1st year of MSc) ~ 230h  
+
+| **Ecology** (lab and field)   
+|      General ecology (1st year of BSc) ~ 80h  
+|      Community ecology (3rd year of BSc and 1st year of MSc) ~ 42h  
+|      Spatial ecology (movement ecology; 1st year of MSc) ~ 4h  
+|      Ecological bases of vegetal production (3rd year of BSc) ~ 12h  
+|      Initiation to GIS (2nd year of BSc) ~ 4h  
+
+| **Zoology**  (lab and field)  
+|      Introduction to the diversity of life (1st year of BSc) ~ 30h  
+|      Entomology (3rd year of BSc) ~ 40h  
+|      Physiology of nutrition, development, growth (3rd year of BSc) ~ 6h  
+
+## Mentoring experience {#mentoring}
+
+:::aside
+See list of students for current year [here](https://mdahirel.github.io/post/people/)
+:::
+
+| **Co-supervision of 1 PhD student**  
+
+|      \small{{< fa calendar >}} 2020 - present \normalsize
+|      - Experimental evolution  
+|      - Data synthesis and individual-based modelling  
+
+| **Supervision of 13 MSc students (1st or 2nd year) and 5 BSc students (1 to 6 months projects)**  
+
+|      \small{{< fa calendar >}} 2012 - present \normalsize
+|      - Field and lab studies of dispersal and behaviour  
+|      - Data synthesis and individual-based modelling  
+
+## Research funding {#money}
+
+```{r}
+#| echo: false
+#| output: asis
+print_funding(funding, 'research')
+```
+
+## Selected science communication {#scicomm}
+
+:::aside 
+{{< fa newspaper >}} Research I have participated in has also been featured by various press outlets including the [RTBF](https://www.rtbf.be/info/societe/detail_les-animaux-changent-de-taille-quand-ils-vivent-en-ville?id=9925810), [De Standaard](https://www.standaard.be/cnt/dmf20180402_03441454), [Scientific American](https://www.scientificamerican.com/podcast/episode/city-life-favors-downsized-invertebrates/), [Le Temps](https://www.letemps.ch/sciences/lurbanisation-un-probleme-taille), as well as local journals and television channels.
+:::
+
+**[Invited speaker, Ateliers À propos](https://www.a-propos.brussels/)**
+
+|    \small{{< fa calendar >}} 2022 \normalsize  
+|    Online science workshop (targeted to 6-12 year olds): invited for a session on snail biology, urban ecology (in French)
+
+**[Contributor to the Life in the City : Evolution in an Urbanizing World blog](https://lifeinthecityurbanevo.wordpress.com/)**
+
+|    \small{{< fa calendar >}} since 2018 \normalsize  
+|    Discussions of current topics and articles in urban ecology and evolution
+
+## Service {#service}
+
+**Referee for various journals and outlets** 
+
+including Proceedings of the Royal Society B, Functional Ecology, Journal of Animal Ecology, Oikos, PCI Ecology, Ethology… 
+
+**Member of the Grant Review College of the British Ecological Society**
+
+Reviewing Research and Outreach Grant applications (6 to 8 / year)
+
+**PhD students representative to the Advisory Board of the research unit**
+
+|    \small {{< fa calendar >}} 2012-2014 \normalsize  
+|    University of Rennes 1, ECOBIO (Ecosystems, Biodiversity, Evolution)
+
+## Publications {#publications}
+
+```{r import_info}
+#| echo: false
+
+preprints <- filter(articles,section=="preprint") |> 
+  arrange(-year)
+published <- filter(articles, section=="peer-reviewed") |> 
+  arrange(-year)
+```
+
+## Preprints (`r length(preprints$title)`) {#preprints}
+
+```{r results='asis'}
+#| echo: false
+
+print_papers(preprints)
+```
+
+## Peer-reviewed publications (`r length(published$title)`) {#peer-reviewed}
+
+```{r results='asis'}
+#| echo: false
+
+print_papers(published)
+```
+
+
+## Communications in conferences {#conferences}
+
+:::aside 
+(Talks or posters as non-presenting author not included)
+:::
+
+## Talks (`r dim(filter(talks_and_posters, section=="talk"))[1]`) {#talks}
+
+```{r results='asis'}
+#| echo: false
+
+print_meetings(talks_and_posters|> filter(section=='talk'))
+```
+
+## Posters (`r dim(filter(talks_and_posters, section=="poster"))[1]`) {#posters}
+
+```{r results='asis'}
+#| echo: false
+
+print_meetings(talks_and_posters|> filter(section=='poster'))
+```
+
+## Workshops {#workshops} 
+
+```{r results='asis'}
+#| echo: false
+
+print_meetings(talks_and_posters|> filter(section=='workshop'))
+```
+
+## Predoctoral education {#predoc_ed} 
+
+```{r}
+#| echo: false
+#| output: asis
+print_position(education, 'diploma')
+```
+
+## Other {#other}
+
+**Qualification from the French National Council of Universities**
+
+|      authorized to apply for Lecturer/Assistant Professor positions in France, section 67 (Population Biology and Ecology)
+
+**Member of the British Ecological Society**
+
+
+## References
+
+```{r results='asis'}
+#| echo: false
+
+print_references(references)
+```
+
+::: {.aside}
+`\vspace{60em}`{=latex}
+
+Made with [Quarto](https://quarto.org/)  
+Code on [GitHub](https://github.com/mdahirel/cv)  
+Animal silhouettes from [Phylopic](https://http://phylopic.org/):  
+- snail by [Gareth Monger](http://phylopic.org/image/cdc067a4-c2cc-4962-b330-2c9d02d245cb/)  
+- spider by [Birgit Lang](http://phylopic.org/image/c8ca5adb-0b7d-4966-a5ca-efcca71b1542/)  
+CV last updated on `r Sys.Date()`
+:::
