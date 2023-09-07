@@ -197,11 +197,11 @@ print_funding(funding, 'research')
 
 **Referee for various journals and outlets** 
 
-including Proceedings of the Royal Society B, Functional Ecology, Journal of Animal Ecology, Oikos, PCI Ecology, Ethology… 
+including *Proceedings of the Royal Society B*, *Functional Ecology*, *Journal of Animal Ecology*, *Oikos*, *PCI Ecology*, *Animal Behaviour*… 
 
 **Member of the Grant Review College of the British Ecological Society**
 
-Reviewing Research and Outreach Grant applications (6 to 8 / year)
+Reviewing Research and Outreach Grant applications (typically 4 to 6 / year)
 
 **PhD students representative to the Advisory Board of the research unit**
 
