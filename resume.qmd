@@ -1,0 +1,136 @@
+---
+title: Maxime Dahirel
+subtitle: Quantitative ecologist, data scientist
+format: 
+    pdf:
+      keep-tex: false
+      include-in-header: 
+       - "cv-header.tex"
+      toc: false
+      toc-depth:  2
+      code-block-bg: light
+      linkcolor: links
+      urlcolor: links
+      fontsize: 10pt
+      geometry:
+        - a4paper
+        - left=20mm
+        - top=20mm
+        - bottom=20mm
+        - right=65mm
+        - marginparwidth=50mm
+        - marginparsep=8mm
+---
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+library(glue)
+library(ggtext)
+library(commonmark)
+library(here)
+source('./R/parsing_functions.R')
+source('./R/get_data.R')
+```
+
+```{r import_info}
+#| echo: false
+
+preprints <- filter(articles,section=="preprint") |> 
+  arrange(-year)
+published <- filter(articles, section=="peer-reviewed") |> 
+  arrange(-year)
+```
+
+::: {.column-margin}
+
+`\vspace{-12em}`{=latex}
+
+### {{< fa info >}} Info {#info}
+
+{{< fa envelope >}} maxime.dahirel\@ugent.be\
+{{< fa envelope >}} maxime.dahirel\@yahoo.fr\
+{{< fa brands github >}} [github.com/mdahirel](https://github.com/mdahirel)\
+{{< fa home >}} [mdahirel.github.io/](https://mdahirel.github.io/)\
+
+### {{< fa comment >}} Languages {#languages}
+
+```{r}
+#| echo: false
+#| fig-height: 2.4
+language_skills |> 
+  mutate(skill=fct_reorder(skill,level)) |> 
+  build_skill_bars()
+```
+
+### {{< fa code >}} Programming languages {#coding}
+
+```{r}
+#| echo: false
+#| fig-height: 1.6
+coding |> 
+  mutate(skill=fct_reorder(skill,level)) |> 
+  build_skill_bars()
+```
+### {{< fa chart-line >}} Data science and statistics {#stats}
+
+**Version control with Git & GitHub**  
+**Quarto/RMarkdown**  
+**Bayesian & frequentist statistics**  
+Linear models and extensions
+(Any and all combinations of generalized, mixed, non-linear, or multivariate)  
+Ordination and classification methods  
+...  
+**Spatial data science & GIS**  
+
+### {{< fa laptop >}} Other software {#software}
+
+```{r}
+#| echo: false
+#| fig-height: 2.4
+software |> 
+  mutate(skill=fct_reorder(skill,level)) |> 
+  build_skill_bars()
+```
+:::
+
+## Highlights {#highlights}
+
+- 12 years of experience in statistics, experimental and observational study design applied to ecology
+- Recognised expert in animal behaviour and urban biodiversity/ecology
+- Expertise in R-based data science workflows
+- Expertise in classical and Bayesian statistics
+- Author of `r length(published$title)` peer-reviewed scientific papers, with about 3/4 of those in a major role: lead or senior author, data analyst or research designer
+- Experienced in research supervising roles, funding acquisition from local to EU level, project management
+
+## Most recent position {#lastjob}
+
+```{r}
+#| echo: false
+#| output: asis
+print_position(position_data, 'current-job')
+```
+
+## Previous positions {#jobs}
+
+```{r}
+#| echo: false
+#| output: asis
+print_position(position_data, 'previous-positions')
+```
+
+TO REFORMAT, + ADD KEY SKILLS
+
+## Education {#education}
+
+**PhD**
+
+**Master**
+
+**Bachelor**
+
+::: {.aside}
+Made with [Quarto](https://quarto.org/)  
+Code on [GitHub](https://github.com/mdahirel/cv)  
+last updated on `r Sys.Date()`
+:::
