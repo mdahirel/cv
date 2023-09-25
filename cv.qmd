@@ -48,14 +48,13 @@ source('./R/get_data.R')
 
 ## Key skills {#skills}
 
-### Main study taxa {#taxa}
+### {{< fa spider >}} Invertebrate zoology {#taxa}
 
-![snail](images/cornu-aspersum_gareth-monger-phylopic.png){width=10%}  ![orbweaver](images/araneus-diadematus_birgit-lang-phylopic.png){width=10%}
-
+(primarily land snails and spiders)  
 **Rearing**  
 **Trait measurements**  
-**Behavioural test observations**   
-**Field sampling**  
+**Behavioural observations**   
+**Field sampling methods**  
 **Species ID** (Western Europe)  
 
 ### {{< fa comment >}} Languages {#languages}
@@ -81,12 +80,15 @@ coding |>
 
 **Version control with Git & GitHub**  
 **Quarto/RMarkdown**  
+**Shiny apps** (offline)  
 **Bayesian & frequentist statistics**  
 Linear models and extensions
-(Any and all combinations of generalized, mixed, non-linear, or multivariate)  
+(Any and all combinations of generalized, mixed/hierarchical, additive, non-linear, or multivariate)  
 Ordination and classification methods  
 ...  
+**Advanced data visualisation**  
 **Spatial data science & GIS**  
+**Individual-based modelling**
 
 ### {{< fa laptop >}} Other software {#software}
 
@@ -105,7 +107,7 @@ My researches are mostly split along two linked axes:
 
 - **dispersal** as a key trait bridging ecological and evolutionary dynamics.
 
-I develop these research themes using a combination of lab and outdoor experiments, monitoring in naturalistic contexts and individual-based models.
+I develop these research themes using a combination of lab and outdoor experiments, monitoring in naturalistic contexts and individual-based models. A key aspect of my work is the use of advanced statistical and data science methods that accurately reflect the complexity of the natural systems I study.
 
 **To go directly to the list of publications [click here](#publications)**
 
@@ -292,12 +294,9 @@ print_references(references)
 ```
 
 ::: {.aside}
-`\vspace{60em}`{=latex}
+`\vspace{65em}`{=latex}
 
 Made with [Quarto](https://quarto.org/)  
 Code on [GitHub](https://github.com/mdahirel/cv)  
-Animal silhouettes from [Phylopic](https://http://phylopic.org/):  
-- snail by [Gareth Monger](http://phylopic.org/image/cdc067a4-c2cc-4962-b330-2c9d02d245cb/)  
-- spider by [Birgit Lang](http://phylopic.org/image/c8ca5adb-0b7d-4966-a5ca-efcca71b1542/)  
 CV last updated on `r Sys.Date()`
 :::
