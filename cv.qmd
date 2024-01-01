@@ -1,6 +1,6 @@
 ---
 title: Maxime Dahirel
-subtitle: (he/they)
+subtitle: (they/he)
 format: 
     pdf:
       keep-tex: false
