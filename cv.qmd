@@ -161,7 +161,7 @@ See list of students for current year [here](https://mdahirel.github.io/post/peo
 
 | **Co-supervision of 1 PhD student**  
 
-|      \small{{< fa calendar >}} 2020 - present \normalsize
+|      \small{{< fa calendar >}} 2020 - 2023 \normalsize
 |      - Experimental evolution  
 |      - Data synthesis and individual-based modelling  
 
