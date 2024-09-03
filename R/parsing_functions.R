@@ -96,7 +96,7 @@ print_papers<-function(df){
                             "|     {publication}",
                             "\n\n",
                             "| \\small {authors} \\normalsize",
-                            "\n\n\n\n",
+                            "\n\n\n\n"
                           )
     )
     ) |> 

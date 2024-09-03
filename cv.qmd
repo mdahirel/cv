@@ -41,7 +41,8 @@ source('./R/get_data.R')
 
 {{< fa envelope >}} maxime.dahirel\@ugent.be\
 {{< fa envelope >}} maxime.dahirel\@yahoo.fr\
-{{< fa mastodon >}} [\@mdahirel\@mastodon.social](https://mastodon.social/@mdahirel)\
+{{< fa at >}} [\@mdahirel.bsky.social](https://bsky.app/profile/mdahirel.bsky.social)\
+{{< fa at >}} [\@mdahirel\@mastodon.social](https://mastodon.social/@mdahirel)\
 {{< fa brands github >}} [\@mdahirel](https://github.com/mdahirel)\
 {{< fa home >}} [mdahirel.github.io/](https://mdahirel.github.io/)\
 {{< fa orcid >}} [0000-0001-8077-7765](https://orcid.org/0000-0001-8077-7765)
@@ -83,7 +84,7 @@ coding |>
 **Shiny apps** (offline)  
 **Bayesian & frequentist statistics**  
 Linear models and extensions
-(Any and all combinations of generalized, mixed/hierarchical, additive, non-linear, or multivariate)  
+(Any and all combinations of generalized, mixed/hierarchical, additive, non-linear, or multi-response)  
 Ordination and classification methods  
 ...  
 **Advanced data visualisation**  
@@ -294,9 +295,10 @@ print_references(references)
 ```
 
 ::: {.aside}
-`\vspace{65em}`{=latex}
+`\vspace{25em}`{=latex}
 
 Made with [Quarto](https://quarto.org/)  
 Code on [GitHub](https://github.com/mdahirel/cv)  
+Icons from [Font Awesome](https://fontawesome.com/)  
 CV last updated on `r Sys.Date()`
 :::
