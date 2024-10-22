@@ -106,7 +106,7 @@ My researches are mostly split along two linked axes:
 
 - **urban biodiversity, ecology and evolution**, with a focus on the role of trait variation in explaining species' ability (or inability) to persist in cities  
 
-- **dispersal** as a key trait bridging ecological and evolutionary dynamics.
+- **dispersal** as a bridge between ecological and evolutionary dynamics.
 
 I develop these research themes using a combination of lab and outdoor experiments, monitoring in naturalistic contexts and individual-based models. A key aspect of my work is the use of advanced statistical and data science methods that accurately reflect the complexity of the natural systems I study.
 
