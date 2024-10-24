@@ -169,7 +169,8 @@ See list of students for current year [here](https://mdahirel.github.io/post/peo
 | **Supervision of 13 MSc students (1st or 2nd year) and 5 BSc students (1 to 6 months projects)**  
 
 |      \small{{< fa calendar >}} 2012 - present \normalsize
-|      - Field and lab studies of dispersal and behaviour  
+|      - Urban ecology and dispersal ecology 
+|      - Field and lab studies
 |      - Data synthesis and individual-based modelling  
 
 ## Research funding {#money}
