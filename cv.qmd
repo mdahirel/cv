@@ -47,6 +47,8 @@ source('./R/get_data.R')
 {{< fa home >}} [mdahirel.github.io/](https://mdahirel.github.io/)\
 {{< fa orcid >}} [0000-0001-8077-7765](https://orcid.org/0000-0001-8077-7765)
 
+Member of the British Ecological Society
+
 ## Key skills {#skills}
 
 ### {{< fa spider >}} Invertebrate zoology {#taxa}
@@ -166,7 +168,7 @@ See list of students for current year [here](https://mdahirel.github.io/post/peo
 |      - Experimental evolution  
 |      - Data synthesis and individual-based modelling  
 
-| **Supervision of 13 MSc students (1st or 2nd year) and 5 BSc students (1 to 6 months projects)**  
+| **Supervision of 13 MSc students, 1st or 2nd year, and 7 BSc students (1 to 6 months projects)**  
 
 |      \small{{< fa calendar >}} 2012 - present \normalsize
 |      - Urban ecology and dispersal ecology 
@@ -187,14 +189,14 @@ print_funding(funding, 'research')
 {{< fa newspaper >}} Research I have participated in has also been featured by various press outlets including the [RTBF](https://www.rtbf.be/info/societe/detail_les-animaux-changent-de-taille-quand-ils-vivent-en-ville?id=9925810), [De Standaard](https://www.standaard.be/cnt/dmf20180402_03441454), [Scientific American](https://www.scientificamerican.com/podcast/episode/city-life-favors-downsized-invertebrates/), [Le Temps](https://www.letemps.ch/sciences/lurbanisation-un-probleme-taille), as well as local journals and television channels.
 :::
 
-**[Invited speaker, Ateliers À propos](https://www.a-propos.brussels/)**
+**Invited speaker, Ateliers À propos**
 
 |    \small{{< fa calendar >}} 2022 \normalsize  
 |    Online science workshop (targeted to 6-12 year olds): invited for a session on snail biology, urban ecology (in French)
 
-**[Contributor to the Life in the City : Evolution in an Urbanizing World blog](https://lifeinthecityurbanevo.wordpress.com/)**
+**[Contributor to the Life in the City : Evolution in an Urbanizing World blog](https://urbanevolution-litc.com/)**
 
-|    \small{{< fa calendar >}} since 2018 \normalsize  
+|    \small{{< fa calendar >}} 2018-2019 \normalsize  
 |    Discussions of current topics and articles in urban ecology and evolution
 
 ## Service {#service}
@@ -221,6 +223,8 @@ preprints <- filter(articles,section=="preprint") |>
   arrange(-year)
 published <- filter(articles, section=="peer-reviewed") |> 
   arrange(-year)
+reports <- filter(articles, section=="report") |> 
+  arrange(-year)
 ```
 
 ## Preprints (`r length(preprints$title)`) {#preprints}
@@ -239,6 +243,13 @@ print_papers(preprints)
 print_papers(published)
 ```
 
+## Other publicly available reports (`r length(reports$title)`) {#reports}
+
+```{r results='asis'}
+#| echo: false
+
+print_papers(reports)
+```
 
 ## Communications in conferences {#conferences}
 
@@ -278,15 +289,6 @@ print_meetings(talks_and_posters|> filter(section=='workshop'))
 print_position(education, 'diploma')
 ```
 
-## Other {#other}
-
-**Qualification from the French National Council of Universities**
-
-|      authorized to apply for Lecturer/Assistant Professor positions in France, section 67 (Population Biology and Ecology)
-
-**Member of the British Ecological Society**
-
-
 ## References
 
 ```{r results='asis'}
@@ -296,7 +298,7 @@ print_references(references)
 ```
 
 ::: {.aside}
-`\vspace{25em}`{=latex}
+`\vspace{-0em}`{=latex}
 
 Made with [Quarto](https://quarto.org/)  
 Code on [GitHub](https://github.com/mdahirel/cv)  

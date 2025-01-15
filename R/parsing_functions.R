@@ -100,7 +100,7 @@ print_papers<-function(df){
                           )
     )
     ) |> 
-    mutate(year_glued = case_when(section=="peer-reviewed"~glue("### {year} \n\n"),
+    mutate(year_glued = case_when(section!="preprint"~glue("### {year} \n\n"),
                                   TRUE ~ glue(""))
            )|> 
     mutate(full = map2(.x=year_glued, .y = parsed,
