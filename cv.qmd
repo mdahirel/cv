@@ -83,12 +83,11 @@ coding |>
 
 **Version control with Git & GitHub**  
 **Quarto/RMarkdown**  
-**Shiny apps** (offline)  
+**Shiny apps development** (offline)  
 **Bayesian & frequentist statistics**  
 Linear models and extensions
 (Any and all combinations of generalized, mixed/hierarchical, additive, non-linear, or multi-response)  
-Ordination and classification methods  
-...  
+**Ordination and classification methods**  
 **Advanced data visualisation**  
 **Spatial data science & GIS**  
 **Individual-based modelling**
@@ -297,8 +296,10 @@ print_position(education, 'diploma')
 print_references(references)
 ```
 
+
+
 ::: {.aside}
-`\vspace{-0em}`{=latex}
+`\vspace{90em}`{=latex}
 
 Made with [Quarto](https://quarto.org/)  
 Code on [GitHub](https://github.com/mdahirel/cv)  
