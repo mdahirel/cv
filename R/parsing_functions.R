@@ -129,7 +129,7 @@ print_meetings<-function(df){
                             "\n",
                             "|     \\small [meeting] | {{< fa globe >}} [location]\\normalsize",
                             "\n\n",
-                            "| [authors]",
+                            "| \\small [authors] \\normalsize",
                             "\n\n\n\n",
                             .na="",
                             .open="[",.close="]"  # change from default to avoid issues with fa icons
