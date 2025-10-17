@@ -1,0 +1,300 @@
+---
+title: Maxime Dahirel
+subtitle: (iel)
+format: 
+    pdf:
+      keep-tex: false
+      include-in-header: 
+       - "cv-header.tex"
+      toc: false
+      toc-depth:  2
+      code-block-bg: light
+      linkcolor: links
+      urlcolor: links
+      fontsize: 10pt
+      geometry:
+        - a4paper
+        - left=20mm
+        - top=20mm
+        - bottom=20mm
+        - right=65mm
+        - marginparwidth=50mm
+        - marginparsep=8mm
+---
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+library(glue)
+library(ggtext)
+library(commonmark)
+library(here)
+source('./R/parsing_functions.R')
+source('./R/get_data_FR.R')
+```
+
+::: {.column-margin}
+
+`\vspace{-12em}`{=latex}
+
+## Info {#info}
+
+{{< fa envelope >}} maxime.dahirel\@ugent.be\
+{{< fa envelope >}} maxime.dahirel\@yahoo.fr\
+{{< fa at >}} [\@mdahirel.bsky.social](https://bsky.app/profile/mdahirel.bsky.social)\
+{{< fa at >}} [\@mdahirel\@mastodon.social](https://mastodon.social/@mdahirel)\
+{{< fa brands github >}} [\@mdahirel](https://github.com/mdahirel)\
+{{< fa home >}} [mdahirel.github.io/](https://mdahirel.github.io/)\
+{{< fa orcid >}} [0000-0001-8077-7765](https://orcid.org/0000-0001-8077-7765)
+
+Membre de la *British Ecological Society*
+
+## Compétences {#skills}
+
+### {{< fa spider >}} Zoologie (invertébrés) {#taxa}
+
+(principalement mollusques terrestres et araignées)  
+**Elevage**  
+**Mesures de traits**  
+**Suivis comportementaux**   
+**Etudes de terrain**  
+**Identification** (Europe de l'Ouest)  
+
+### {{< fa comment >}} Langues {#languages}
+
+```{r}
+#| echo: false
+#| fig-height: 2.4
+language_skills |> 
+  mutate(skill=fct_reorder(skill,level)) |> 
+  build_skill_bars()
+```
+
+### {{< fa code >}} Langages de programmation {#coding}
+
+```{r}
+#| echo: false
+#| fig-height: 1.6
+coding |> 
+  mutate(skill=fct_reorder(skill,level)) |> 
+  build_skill_bars()
+```
+### {{< fa chart-line >}} Statistiques et *data science* {#stats}
+
+**Git & GitHub**  
+**Quarto/RMarkdown**  
+**Shiny apps** (offline)  
+**Statistiques Bayésiennes & fréquentistes**  
+Modèles linéaires et extensions
+(Toutes combinaisons de generalisé, mixte/hiérarchique, additif, non-linéaire, or multi-réponse)  
+**Ordination & classification**  
+**Visualisation de données**  
+**Données spatiales & SIG**  
+**Simulations individu-centrées**
+
+### {{< fa laptop >}} Autre *software* {#software}
+
+```{r}
+#| echo: false
+#| fig-height: 2.4
+software |> 
+  mutate(skill=fct_reorder(skill,level)) |> 
+  build_skill_bars()
+```
+:::
+
+My recherches sont divisées en deux axes liés: 
+
+- **écologie, évolution et biodiversité urbaine**, avec un focus sur le rôle de la variation phénotypique  
+
+- la **dispersion** comme un pont entre dynamiques écologiques et évolutives.
+
+Je développe ces recherches en combinant expériences en laboratoire et en extérieur, suivis en conditions naturelles et simulations individu-centrées. Un aspect clé de mon travail est l'utilisation de méthodes statistiques avancée reflétant la complexité des systèmes que j'étudie.
+
+**Pour aller directement à la liste des publications, [cliquez ici](#publications)**
+
+## Poste actuel {#lastjob}
+
+```{r}
+#| echo: false
+#| output: asis
+print_position(position_data, 'current-job')
+```
+
+## Postes précédents {#jobs}
+
+```{r}
+#| echo: false
+#| output: asis
+print_position(position_data, 'previous-positions')
+```
+
+## Expérience d'enseignement {#teaching}
+
+```{r}
+#| echo: false
+#| output: asis
+print_position(position_data, 'teaching-positions')
+```
+
+### Les classes enseignées ou co-enseignées incluent:  
+
+| **Statistiques et *data science* **  
+|      R pour l'analyse de données avancée ~ 20h  
+|      Outils statistiques et plans d'expériences ~ 230h  
+
+| **Ecologie**   
+|      Ecologie générale ~ 80h  
+|      Ecologie des communautés ~ 42h  
+|      Ecologie spatiale ~ 4h  
+|      Bases écologiques de la production végétale ~ 12h  
+|      Initiation aux SIG ~ 4h  
+
+| **Zoologie**  
+|      Introduction à la diversité du vivant ~ 30h  
+|      Entomologie ~ 40h  
+|      Physiologie de la nutrition et du développement ~ 6h  
+
+## Supervision {#mentoring}
+
+:::aside
+Liste d'étudiants pour l'année en cours [ici](https://mdahirel.github.io/post/people/)
+:::
+
+| **Co-supervision d'une étudiante en thèse de doctorat**  
+
+|      \small{{< fa calendar >}} 2020 - 2023 \normalsize
+|      - Evolution expérimentale
+|      - Simulations individu-centrées 
+
+| **Supervision de 13 étudiants de niveau master, et 7 étudiants de niveau licence (BSc)**  
+
+|      \small{{< fa calendar >}} 2012 - present \normalsize
+|      - Ecologie urbaine, ecologie de la dispersion 
+|      - Etude de terrain et en labo
+|      - Simulations individu-centrées  
+
+## Financements de recherches {#money}
+
+```{r}
+#| echo: false
+#| output: asis
+print_funding(funding, 'research')
+```
+
+## Vulgarisation scientifique (liste partielle) {#scicomm}
+
+:::aside 
+{{< fa newspaper >}} Mes travaux de recherche ont aussi été présentés dans divers médias dont la  [RTBF](https://www.rtbf.be/info/societe/detail_les-animaux-changent-de-taille-quand-ils-vivent-en-ville?id=9925810), [De Standaard](https://www.standaard.be/cnt/dmf20180402_03441454), [Scientific American](https://www.scientificamerican.com/podcast/episode/city-life-favors-downsized-invertebrates/), [Le Temps](https://www.letemps.ch/sciences/lurbanisation-un-probleme-taille), ainsi que des journaux et chaines de télévision locales.
+:::
+
+**Présentateur, Ateliers À propos**
+
+|    \small{{< fa calendar >}} 2022 \normalsize  
+|    Vulgarisation scientifique en ligne (pour enfants de 6-12 ans): session sur l'écologie urbaine et la biologie des escargots
+
+**[Contributions à Life in the City : Evolution in an Urbanizing World blog](https://urbanevolution-litc.com/)**
+
+|    \small{{< fa calendar >}} 2018-2019 \normalsize  
+|    Discussions de sujets et articles en écologie urbaine
+
+## Service {#service}
+
+**_Referee_ pour des journaux à comité de lecture** 
+
+dont *Proceedings of the Royal Society B*, *Functional Ecology*, *Journal of Animal Ecology*, *Oikos*, *PCI Ecology*, *Animal Behaviour*… 
+
+**Membre du *Grant Review College* de la _British Ecological Society_**
+
+Evaluation des demandes de financements de recherche et de vulgarisation (habituellement 4 à 6/an)
+
+**Représentant des doctorants au Conseil Consultatif de l'unité de recherches**
+
+|    \small {{< fa calendar >}} 2012-2014 \normalsize  
+|    Université de Rennes 1, unité de recherches ECOBIO
+
+## Publications {#publications}
+
+```{r import_info}
+#| echo: false
+
+preprints <- filter(articles,section=="preprint") |> 
+  arrange(-year)
+published <- filter(articles, section=="peer-reviewed") |> 
+  arrange(-year)
+reports <- filter(articles, section=="report") |> 
+  arrange(-year)
+```
+
+## Preprints (`r length(preprints$title)`) {#preprints}
+
+```{r results='asis'}
+#| echo: false
+
+print_papers(preprints)
+```
+
+## Publications revues par les pairs (`r length(published$title)`) {#peer-reviewed}
+
+```{r results='asis'}
+#| echo: false
+
+print_papers(published)
+```
+
+## Autres rapports publics (`r length(reports$title)`) {#reports}
+
+```{r results='asis'}
+#| echo: false
+
+print_papers(reports)
+```
+
+## Communications en conférences {#conferences}
+
+:::aside 
+(Présentations et posters en tant qu'auteur-non-présentateur non incluses)
+:::
+
+## Présentations orales (`r dim(filter(talks_and_posters, section=="talk"))[1]`) {#talks}
+
+```{r results='asis'}
+#| echo: false
+
+print_meetings(talks_and_posters|> filter(section=='talk'))
+```
+
+## Posters (`r dim(filter(talks_and_posters, section=="poster"))[1]`) {#posters}
+
+```{r results='asis'}
+#| echo: false
+
+print_meetings(talks_and_posters|> filter(section=='poster'))
+```
+
+## Workshops {#workshops} 
+
+```{r results='asis'}
+#| echo: false
+
+print_meetings(talks_and_posters|> filter(section=='workshop'))
+```
+
+## Références
+
+```{r results='asis'}
+#| echo: false
+
+print_references(references)
+```
+
+
+
+::: {.aside}
+`\vspace{5em}`{=latex}
+
+Fait avec [Quarto](https://quarto.org/)  
+Code sur [GitHub](https://github.com/mdahirel/cv)  
+Icônes de [Font Awesome](https://fontawesome.com/)  
+CV mis à jour le `r Sys.Date()`
+:::
