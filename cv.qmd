@@ -47,8 +47,6 @@ source('./R/get_data.R')
 {{< fa home >}} [mdahirel.github.io/](https://mdahirel.github.io/)\
 {{< fa orcid >}} [0000-0001-8077-7765](https://orcid.org/0000-0001-8077-7765)
 
-Member of the British Ecological Society
-
 ## Key skills {#skills}
 
 ### {{< fa spider >}} Invertebrate zoology {#taxa}
@@ -299,7 +297,7 @@ print_references(references)
 
 
 ::: {.aside}
-`\vspace{90em}`{=latex}
+`\vspace{60em}`{=latex}
 
 Made with [Quarto](https://quarto.org/)  
 Code on [GitHub](https://github.com/mdahirel/cv)  
